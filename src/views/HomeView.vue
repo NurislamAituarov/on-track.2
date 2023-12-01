@@ -18,17 +18,18 @@ import {
   PAGE_ACTIVITIES,
   navItems,
   PAGE_TIMELINE,
-  PAGE_AUTHORIZATION,
+  // PAGE_AUTHORIZATION,
   PAGE_PROGRESS
 } from '@/lib/constants'
-import { useRouter } from 'vue-router'
+// закомментировал неиспользуемый функционал
+// import { useRouter } from 'vue-router'
 //////////////////////////////////////////////////////////////////
-const router = useRouter()
+// const router = useRouter()
 
-onMounted(() => {
-  const user = localStorage.getItem('user')
-  if (!user) router.push({ path: PAGE_AUTHORIZATION })
-})
+// onMounted(() => {
+//   const user = localStorage.getItem('user')
+//   if (!user) router.push({ path: PAGE_AUTHORIZATION })
+// })
 
 // взять из url имя странаицы
 const currentPage = ref(normalizeHash(navItems))
