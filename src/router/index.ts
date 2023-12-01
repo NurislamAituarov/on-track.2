@@ -13,9 +13,8 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AuthorizationView.vue')
   }
 ]
-
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL || '/'),
   routes
 })
 
