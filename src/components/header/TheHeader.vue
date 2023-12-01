@@ -25,5 +25,6 @@ defineEmits(['go-to-timeline', 'go-to-progress'])
 .header__logo {
   display: block;
   height: 36px;
+  width: 134px;
 }
 </style>
