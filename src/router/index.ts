@@ -6,12 +6,12 @@ const routes: Array<RouteRecordRaw> = [
     path: '/',
     name: 'home',
     component: HomeView
-  },
-  {
-    path: '/authorization',
-    name: 'authorization',
-    component: () => import(/* webpackChunkName: "about" */ '../views/AuthorizationView.vue')
   }
+  // {
+  //   path: '/authorization',
+  //   name: 'authorization',
+  //   component: () => import(/* webpackChunkName: "about" */ '../views/AuthorizationView.vue')
+  // }
 ]
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL || '/'),

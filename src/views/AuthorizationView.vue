@@ -3,7 +3,7 @@
     @submit.prevent="submit"
     class="text-start px-5 py-20 flex flex-col gap-5 max-w-2xl mx-auto my-0 relative"
   >
-    <pre>{{ form }}</pre>
+    <!-- <pre>{{ form }}</pre> -->
 
     <h1 class="text-5xl">Authorization</h1>
 
